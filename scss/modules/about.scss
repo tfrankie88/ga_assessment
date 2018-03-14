@@ -1,0 +1,81 @@
+/* Add Styles Here */
+section {
+  .about & {
+    width: 90%;
+    @include breakpoint(laptop) {
+      width: 85%;
+    }
+    h2 {
+      margin: 32px 0;
+      @include breakpoint(desktop) {
+        margin: 40px 0;
+      }
+    }
+  }
+}
+
+.about__ul {
+  list-style: none;
+  text-align: center;
+  @include flex(flex, column, center, stretch);
+  padding: 0;
+  @include breakpoint(laptop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.about__li {
+  background-color: $grey;
+  width: 100%;
+  margin: 2px 0;
+  h2, p {
+    padding: 0 10px;
+  }
+  @include breakpoint(laptop) {
+    width: calc(50% - 4px);
+    margin: 2px;
+  }
+  @include breakpoint(desktop) {
+    width: calc(33.33333% - 4px);
+  }
+}
+
+.h2--right {
+  text-align: right;
+}
+
+.about--thumbnail {
+  margin-bottom: 16px;
+  @include breakpoint(tablet) {
+    width: 50%;
+    margin: 0 20px 20px 0
+  }
+}
+
+#quote {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 90px;
+  blockquote {
+    margin: 0;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+    @include breakpoint(desktop) {
+      font-size: 30px;
+    }
+  }
+}
+
+#bio-image {
+  width: 100%;
+  margin: 32px 0 48px;
+  @include breakpoint(desktop) {
+    margin: 40px 0 90px;
+  }
+  img {
+    width: 100%;
+    margin: 0;
+  }
+}

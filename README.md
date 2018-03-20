@@ -1,5 +1,6 @@
-to locally run repo
+To locally run repo
 
-- init npm  
-- install npm gulp  
-- run npm run dev (this will build the scss and js files & will kick up a local host ustilizing Browsersync)
+In terminal
+- ```init npm```
+- ```npm install --save``` (this will set up gulp dependency)
+- ``` npm run dev ``` (this will build the scss and js files & will kick up a local host utilizing Browsersync)
